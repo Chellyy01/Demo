@@ -830,7 +830,7 @@
     </style>
     <style>
 
-</style>
+    </style>
     <link rel="stylesheet" id="woocommerce-coming-soon-css" href="./EraldineHairs_files/coming-soon.css" media="all">
     <link rel="stylesheet" id="ct-main-styles-css" href="./EraldineHairs_files/main.min.css" media="all">
     <link rel="stylesheet" id="ct-woocommerce-styles-css" href="./EraldineHairs_files/woocommerce.min.css" media="all">
@@ -2046,10 +2046,10 @@
     </style>
     <style>
         [data-sticky="yes"],
-[data-sticky="fixed"] {
-  /* position: static !important; */
-  top: 0px !important;
-}
+        [data-sticky="fixed"] {
+            /* position: static !important; */
+            top: 0px !important;
+        }
     </style>
     <script async="" src="./EraldineHairs_files/sticky.js.download"></script>
     <script async="" src="./EraldineHairs_files/sticky(1).js.download"></script>
@@ -3687,11 +3687,19 @@
     <link rel="stylesheet" href="./EraldineHairs_files/cart-header-element-lazy(1).min.css">
     <link rel="stylesheet" href="./EraldineHairs_files/header-account-dropdown-lazy(1).min.css">
     <style>
-        [data-sticky="yes"],
-[data-sticky="fixed"] {
-  /* position: static !important; */
-  top: 0 !important;
-}
+        [data-sticky*="yes"],
+        [data-sticky*="fixed"] {
+            /* position: sticky !important; */
+            top: 0 !important;
+            z-index: 9999;
+        }
+
+        [data-sticky^="yes"],
+        [data-sticky^="fixed"] {
+            /* position: sticky !important; */
+            top: 0 !important;
+            z-index: 9999;
+        }
     </style>
 </body>
 
